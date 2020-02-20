@@ -20,11 +20,6 @@ const users = [
 
 server.get('/api/user', (req, res) => {
     res.json(users);
-    console.log(users);
-})
-
-server.get('/api/user/:id', (req, res) => {
-    res.json(users);
     console.log(users, 'data is transfered by GET method');
 });
 
@@ -71,4 +66,4 @@ server.delete('/api/user/:id', (req, res) => {
 
 server.listen(3000, ()=> {
     console.log('The server is running');
-}); 
+});
